@@ -5,7 +5,8 @@
       </ion-nav-back-button>
 
       <ion-nav-buttons side="left">
-        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        <button class="button button-icon button-clear ion-navicon"
+                menu-toggle="left">
         </button>
       </ion-nav-buttons>
     </ion-nav-bar>
@@ -18,19 +19,11 @@
     </ion-header-bar>
     <ion-content>
       <ion-list>
-        <ion-item menu-close>
-          Home
-        </ion-item>
-        <ion-item menu-close href="#/app/search">
-          Teams
-        </ion-item>
-        <ion-item menu-close href="#/app/browse">
-          Standings
-        </ion-item>
-        <ion-item menu-close href="#/app/playlists">
-          Locations
-        </ion-item>
-        <ion-item menu-close>Rules</ion-item>
+        <ion-item nav-clear menu-close ui-sref="home.leagues">Home</ion-item>
+        <ion-item nav-clear menu-close ui-sref="app.teams">Teams</ion-item>
+        <ion-item nav-clear menu-close ui-sref="app.standings">Standings</ion-item>
+        <ion-item nav-clear menu-close ui-sref="app.locations">Locations</ion-item>
+        <ion-item nav-clear menu-close ui-sref="app.rules">Rules</ion-item>
       </ion-list>
     </ion-content>
   </ion-side-menu>
